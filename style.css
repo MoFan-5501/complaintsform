@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Helevatica','Arial',san-serif;
+    background-image: linear-gradient(to bottom right, #ffdad5, #fff7f9);
+}
+.contact-container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cleft{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap:20px;
+}
+.cleft-title h1{
+    font-weight:600;
+    color:#ec4c8b;
+}
+.contact-inputs{
+    width:400px;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    padding-left:25px;
+    font-weight:500;
+    color:#666
+}
+.contact_input_textarea{
+    width:400px;
+    height:140px;
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    padding-left:15px;
+    font-weight: 500;
+    color:#666;
+}
+.contact-inputs:focus{
+    border:2px solid #ec4c8b
+}
+.contact_input_textarea:focus{
+    border:2px solid #ec4c8b
+}
+.cleft button{
+    display:flex;
+    align-items:center;
+    padding:15px 30px;
+    font-size:16px;
+    color:#fff;
+    gap :10px;
+    border:none;
+    background-color: #f386ab;
+    border-radius:50px;
+}

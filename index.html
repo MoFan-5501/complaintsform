@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel="icon" type="image/x-icon" href="./IIIT_Sri_City_Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .contact_inputs_h4{
+        color:#ec4c8b;
+        font-weight: 100px;
+    }
+</style>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="cleft">
+            <input type="hidden" name="access_key" value="16f8e833-ceed-4f4c-ab92-db4e4f7217a6">
+            <div class="cleft-title">
+                <h1>File a Complaint</h1>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Email ID" class="contact-inputs" required>
+            <h3 class="contact_inputs_h4">Where is your problem?</h3>
+            <select name="Where is the problem" class="contact-inputs">
+                <option value="1">--Select--</option>
+                <option value="Academic Block">Academic Block</option>
+                <option value="Hostel">Hostel</option>
+            </select>
+            <h3 class="contact_inputs_h4">What kind of problem is yours?</h3>
+            <select name="What kind of problem is yours?" class="contact-inputs">
+                <option value="1">--Select--</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Water">Water</option>
+                <option value="Internet">Internet</option>
+                <option value="Cleanliness">Cleanliness</option>
+            </select>
+            <input type="textarea" name="message" placeholder="Mention your problem"  class="contact_input_textarea" required>
+            <button type="submit">Submit</button>
+        </form>
+    <div class="cright">
+        <img src="./IIIT_Sri_City_Logo.png" alt="">
+    </div>
+    </div>
+</body>
+</html>
